@@ -1,0 +1,40 @@
+body{
+    background: #000;
+}
+
+.fecha{
+    font-family: "Orbitron", sans-serif;
+    font-size: 26px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.hora{
+    font-family: 'Londrina Outline', cursive;;
+    font-size: 60px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.green {
+    text-shadow: 
+        0 0 5px #7BFFCE,
+        0 0 10px #7BFFCE,
+        0 0 20px #7BFFCE,
+        0 0 40px #7BFFCE,
+        0 0 80px #7BFFCE,
+        0 0 90px #7BFFCE,
+        0 0 100px #7BFFCE,
+        0 0 150px #7BFFCE;
+}
+
+footer{
+    margin-top: 100px;
+    font-size: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'Sriracha', cursive;
+}

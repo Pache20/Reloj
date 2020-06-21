@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Juan Manuel Pacheco">
+    <meta name="description" content="Elaboramos un reloj digital con Java, Bootstrap y Css">
+    <meta name="keywords" content="Desarrollo de Java, Bootstrap y Css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Reloj</title>
+</head>
+
+<body>
+    <main class="container">
+        <div class="row justify-content-around my-5 fecha green">
+            <div class="col-lg-2 col-md-6 col-sm-12 text-center">
+                <p id="diaSemana"></p>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 text-center">
+                <p id="dia"></p>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 text-center">
+                <p>de</p>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 text-center">
+                <p id="mes"></p>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 text-center">
+                <p>del</p>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 text-center">
+                <p id="year"></p>
+            </div>
+        </div>
+
+        <div class="row justify-content-around hora green">
+            <div class="col-lg-2 col-sm-12 text-center">
+                <p id="horas"></p>
+            </div>
+            <div class="col-lg-2 col-sm-12 text-center">
+                <p>:</p>
+            </div>
+            <div class="col-lg-2 col-sm-12 text-center">
+                <p id="minutos"></p>
+            </div>
+            <div class="col-lg-2 col-sm-12 text-center">
+                <p>:</p>
+            </div>
+            <div class="col-lg-2 col-sm-12 text-center">
+                <p id="segundos"></p>
+            </div>
+            <div class="col-lg-2 col-sm-12 text-center">
+                <p id="ampm"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container text-center green">
+        <div>
+            <p>&copy; Todos los derechos reservados</p>
+        </div>
+        <div>
+            <p>Comisión 1A.Juan Manuel Pacheco</p>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/reloj.js"></script>
+</body>
+
+</html>

@@ -29,8 +29,23 @@ function obtenerHora(){
     pMinutos.innerText = fecha.getMinutes();
     pSegundos.innerText = fecha.getSeconds();
 
-    if(fecha.getHours() >=12){
-        pHoras.innerText = "0" + (fecha.getHours() -12);
+    //HORAS
+    if (fecha.getHours() < 10) {
+        pHoras.innerText = "0" + fecha.getHours();
+        pAmPm.innerText = "AM"
+    }
+    else if(fecha.getHours() >12){
+        if(fecha.getHours() <22){
+        pHoras.innerText = "0" + (fecha.getHours() - 12);
+        pAmPm.innerText = "PM"
+    }
+    else{ if(fecha.getHours() <22){}
+    pHoras.innerText = fecha.getHours() - 12;
+    pAmPm.innerText = "PM"}
+    }
+    else {
+        pHoras.innerText = fecha.getHours();
+        pAmPm.innerText = "AM"
     }
 
     if(fecha.getMinutes() <10){
@@ -43,12 +58,6 @@ function obtenerHora(){
         pSegundos.innerText = "0"+fecha.getSeconds();
     }else{
         pSegundos.innerText = fecha.getSeconds();
-    }
-
-    if(fecha.getHours() >=12){
-        pAmPm.innerText = "PM";
-    }else{
-        pAmPm.innerText = "AM";
     }
 
 }
